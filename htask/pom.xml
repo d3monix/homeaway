@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.homeaway</groupId>
+	<artifactId>htask</artifactId>
+	<version>1.0.0-RELEASE</version>
+	<packaging>jar</packaging>
+
+	<name>htask</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<!-- LOGGING [R] -->
+		<commons-logging-version>1.2</commons-logging-version>
+		<log4j-version>1.2.17</log4j-version>
+		<slf4j-version>1.7.21</slf4j-version>
+
+		<!-- TESTING -->
+		<junit-version>4.12</junit-version>
+
+		<!-- JAVA -->
+		<java-version>1.7</java-version>
+
+		<!-- PLUGINS -->
+		<maven-compiler-plugin-version>3.5.1</maven-compiler-plugin-version>
+
+		<!-- ENCODING -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>${java-version}</maven.compiler.source>
+		<maven.compiler.target>${java-version}</maven.compiler.target>
+		<!-- =========================================================================== -->
+		<log4j.configuration>log4j.properties</log4j.configuration>
+	</properties>
+
+	<dependencies>
+		<dependency><!-- LOGGING -->
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>${commons-logging-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j-version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>${slf4j-version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j-version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j-version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit-version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>txns.integrator</finalName>
+		<plugins>
+			<plugin><!-- MAVEN COMPILER (plugin) -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin-version}</version>
+				<configuration>
+					<source>${java-version}</source>
+					<target>${java-version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
