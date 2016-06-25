@@ -41,3 +41,11 @@ Maven 3:
 
    NOTE: The first time you run the command, it may take a while as all the
          dependencies will be downloaded.
+         
+To run the first implementation: 
+
+mvn clean test -Dtest=GenPairListTest
+
+To run the secund implementation:
+
+mvn clean test -Dtest=GenPairTree
