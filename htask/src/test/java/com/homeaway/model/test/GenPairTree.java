@@ -1,10 +1,11 @@
-package com.homeaway.htask;
+package com.homeaway.model.test;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.Test;
 
 import com.homeaway.model.GenPair;
+import com.homeaway.util.test.GenPairListTest;
 
 public class GenPairTree {
 
