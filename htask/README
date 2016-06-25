@@ -1,0 +1,43 @@
+###############################################################################
+                    GenPairList - README FILE
+###############################################################################
+
+GenPairList: A Java's List basic implementation 
+
+===============================================================================
+GenPairList List implementation utility
+===============================================================================
+  * Using Maven 3 -       For those that are more familiar with Maven, the
+                          application can be ran using Maven 3.
+
+All methods assume you have installed JDK 1.7. This includes specifying it on
+your PATH, and properly set JAVA_HOME. You can validate that JDK 1.7 is
+properly installed by checking the output of running the following from the
+command line
+
+    javac -version
+
+You will also need an internet connection to download the dependencies for the
+first time
+-------------------------------------------------------------------------------
+Using Maven 3
+-------------------------------------------------------------------------------
+
+For those that are more familiar with Maven, the application can be ran using
+Maven 3:
+
+1) If you have not done so, download and install Maven 3 from
+   http://maven.apache.org/download.html
+2) Ensure you have setup your PATH variable so that running the following from
+   the command line produces the Maven Version
+
+     mvn --version
+
+2) Ensure you have an internet connection
+3) Open a terminal and go to the project path (where the pom.xml is located)
+4) Run the following command to test the classes 
+
+   mvn clean test
+
+   NOTE: The first time you run the command, it may take a while as all the
+         dependencies will be downloaded.
