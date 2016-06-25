@@ -10,9 +10,12 @@ import org.junit.Test;
 import com.homeaway.model.GenPair;
 import com.homeaway.util.GenPairList;
 
-public class AppTest {
+/**
+ *  
+ **/
+public class GenPairListTest {
 
-	public static final Log log = LogFactory.getLog( AppTest.class );
+	public static final Log log = LogFactory.getLog( GenPairListTest.class );
 
 	@Test
 	public void test() {
