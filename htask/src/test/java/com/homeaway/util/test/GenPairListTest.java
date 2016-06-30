@@ -13,6 +13,7 @@ import com.homeaway.util.GenPairList;
 /**
  *  
  **/
+@SuppressWarnings( "deprecation" )
 public class GenPairListTest {
 
 	public static final Log log = LogFactory.getLog( GenPairListTest.class );
@@ -20,7 +21,10 @@ public class GenPairListTest {
 	@Test
 	public void test() {
 		log.info( "Basic test..." );
-
+		
+		log.fatal( "ooo This implementation if the list [GenPairList] is not correct. I misunderstood the instructions" );
+		log.fatal( "ooo The correct one is [GenPair]: mvn clean test -Dtest=GenPairTree" );
+		
 		List< GenPair< Type1, Type2 > > list = getInnerTypesMockList();
 
 		int size = list.size();

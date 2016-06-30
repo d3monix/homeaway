@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.ListIterator;
 
 import com.homeaway.model.GenPair;
-
+@Deprecated
 public class GenPairList< F, S > implements List< GenPair< F, S > > {
 
 	private GenPair< F, S > genPairArray[];

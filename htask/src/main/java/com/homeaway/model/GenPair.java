@@ -1,7 +1,7 @@
 package com.homeaway.model;
 
 public class GenPair< F, S > {
-	int			index;
+	
 	private F	firstElement;
 	private S	secundElement;
 

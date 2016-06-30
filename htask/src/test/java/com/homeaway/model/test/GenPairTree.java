@@ -14,6 +14,8 @@ public class GenPairTree {
 	@Test
 	@SuppressWarnings( { "rawtypes", "unchecked" } )
 	public void test() {
+		log.fatal( "ooo This implementation is the one I did with your instructions (node linked list with recursive methods)" );
+		
 		GenPair gp1 = new GenPair( null, null );
 		GenPair gp2 = new GenPair( null, null );
 		GenPair gp3 = new GenPair( null, null );
