@@ -40,6 +40,8 @@ public class GenPairListTest {
 	@Test
 	public void testListWithInnerTypes() {
 		log.warn( "ooo Testing Generic Pair class 'GenPair< F, S >' with inner types" );
+		log.fatal( "ooo This implementation if the list [GenPairList] is not correct. I misunderstood the instructions" );
+		log.fatal( "ooo The correct one is [GenPair]: mvn clean test -Dtest=GenPairTree" );
 
 		List< GenPair< Type1, Type2 > > list = getInnerTypesMockList();
 
@@ -51,7 +53,9 @@ public class GenPairListTest {
 	@Test
 	public void testListWithJavaTypes() {
 		log.warn( "ooo Testing Generic Pair class 'GenPair< F, S >' with java types" );
-
+		log.fatal( "ooo This implementation if the list [GenPairList] is not correct. I misunderstood the instructions" );
+		log.fatal( "ooo The correct one is [GenPair]: mvn clean test -Dtest=GenPairTree" );
+		
 		List< GenPair< String, BigDecimal > > list = getJavaTypesMockList();
 
 		for( int i = 0; i < list.size(); i++ ) {

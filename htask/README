@@ -46,6 +46,6 @@ To run the first implementation:
 
 mvn clean test -Dtest=GenPairListTest
 
-To run the secund implementation:
+To run the second implementation (correct one):
 
-mvn clean test -Dtest=GenPairTree
+mvn clean test -Dtest=GenPairTreeTest

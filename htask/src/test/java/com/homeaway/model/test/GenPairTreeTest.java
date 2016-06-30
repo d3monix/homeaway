@@ -7,14 +7,14 @@ import org.junit.Test;
 import com.homeaway.model.GenPair;
 import com.homeaway.util.test.GenPairListTest;
 
-public class GenPairTree {
+public class GenPairTreeTest {
 
 	public static final Log log = LogFactory.getLog( GenPairListTest.class );
 
 	@Test
 	@SuppressWarnings( { "rawtypes", "unchecked" } )
-	public void test() {
-		log.fatal( "ooo This implementation is the one I did with your instructions (node linked list with recursive methods)" );
+	public void genPairTree() {
+		log.warn( "ooo This implementation is the one I did with your instructions (node linked list with recursive methods)" );
 		
 		GenPair gp1 = new GenPair( null, null );
 		GenPair gp2 = new GenPair( null, null );
